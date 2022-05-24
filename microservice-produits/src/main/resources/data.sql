@@ -2,7 +2,7 @@ INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (0, 'Bougie f
 
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (1, 'Chaise pour s''assoire', 'Chaise rare avec non pas 1 ni 2 mais 3 pieds', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Chaise.PNG?raw=true', 95.0);
 
-INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (2, 'Cheval pour nains', 'Ce cheval ne portera certainement pas blanche neige, mais sans problème les nains', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Cheval.PNG?raw=true', 360.0);
+INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (2, 'Zit argane', 'had argane dyal blad zwin chriwh', 'https://www.lesjardinsdelamedina.com/blog/wp-content/uploads/2020/06/graine-d-argan.jpg', 69.0);
 
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (3, 'Coq of steel, le superman des volailles', 'Ne passe pas au four', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/coq.PNG?raw=true', 620.0);
 
@@ -13,3 +13,6 @@ INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (5, 'Horloge 
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (6, 'Table d''opération pour Hamsters', 'Pour réaliser vos opérations chirugicales sur votre Hamster!', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/table%20d''op%C3%A9ration.PNG?raw=true', 210.0);
 
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (7 , 'Vase ayant appartenu a Zeus', 'Risque de choc électrique', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Vase.PNG?raw=true', 730.0);
+
+INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (8 , 'Vase ayant appartenu a Zeus', 'Risque de choc électrique', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Vase.PNG?raw=true', 730.0);
+
