@@ -1,36 +1,27 @@
 package com.mproduits.model;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "titre")
     private String titre;
 
+    @Column(name = "description")
     private String description;
 
+    @Column(name = "image")
     private String image;
 
+    @Column(name = "prix")
     private Double prix;
-
-
-    public Product() {
-    }
-
-    public Product(int id, String titre, String description, String image, Double prix) {
-        this.id = id;
-        this.titre = titre;
-        this.description = description;
-        this.image = image;
-        this.prix = prix;
-    }
 
     public int getId() {
         return id;
