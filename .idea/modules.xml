@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-commandes/microservice-commandes.iml" filepath="$PROJECT_DIR$/microservice-commandes/microservice-commandes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-paiement/microservice-paiement.iml" filepath="$PROJECT_DIR$/microservice-paiement/microservice-paiement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-produits/microservice-produits.iml" filepath="$PROJECT_DIR$/microservice-produits/microservice-produits.iml" />
+    </modules>
+  </component>
+</project>
