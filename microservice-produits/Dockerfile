@@ -1,5 +1,5 @@
 # Use the official OpenJDK 17 as a parent image
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-jdk-slim-buster
 
 # Set the working directory in the container
 WORKDIR /app
