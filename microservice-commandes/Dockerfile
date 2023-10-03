@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file into the container
-COPY ./target/mcommandes-0.0.1-SNAPSHOT.jar /app/mcommandes-0.0.1-SNAPSHOT.jar
+COPY target/mcommandes-0.0.1-SNAPSHOT.jar /app/mcommandes-0.0.1-SNAPSHOT.jar
 
 # Expose the port that your Spring Boot application will run on (usually 8080)
 EXPOSE 9001
