@@ -1,11 +1,10 @@
 # Stage 1: Build the Spring Boot application JAR
-# FROM maven:3.8.3 AS build
-# WORKDIR /app
-# COPY . .
-# RUN mvn clean install -DskipTests
+FROM maven:3.8.3 AS build
+WORKDIR /app
+COPY . .
+RUN mvn clean install -DskipTests
 
-# Use the official OpenJDK 17 as a parent image
-FROM openjdk:17-jdk-slim-buster
+FROM openjdk:8-jdk-alpine
 
 # Set the working directory in the container
 WORKDIR /app
