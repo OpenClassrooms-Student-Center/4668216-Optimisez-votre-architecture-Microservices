@@ -1,8 +1,0 @@
-./microservice-commandes/target/*
-!./microservice-commandes/target/*.jar
-
-./microservice-produits/target/*
-!./microservice-produits/target/*.jar
-
-./microservice-paiement/target/*
-!./microservice-paiement/target/*.jar
