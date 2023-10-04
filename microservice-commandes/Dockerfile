@@ -1,5 +1,4 @@
-# Stage 1: Build the Spring Boot application JAR
-FROM maven:3.8.3 AS build
+FROM maven:3.6.3-jdk-8 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean install -DskipTests
