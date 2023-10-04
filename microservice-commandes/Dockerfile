@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN mvn clean install -DskipTests
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8
 WORKDIR /app
 COPY --from=build /app/target/mcommandes-0.0.1-SNAPSHOT.jar /app/mcommandes-0.0.1-SNAPSHOT.jar
 EXPOSE 9002
