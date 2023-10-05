@@ -23,9 +23,11 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/mpaiement:latest microservice-paiement/
           docker build -t ${{ secrets.DOCKER_USERNAME }}/mproduits:latest microservice-produits/
           docker build -t ${{ secrets.DOCKER_USERNAME }}/mcommandes:latest microservice-commandes/
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/config-server:latest config-server/
 
       - name: Push Docker image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/mproduits:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/mcommandes:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/mpaiement:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/config-server:latest

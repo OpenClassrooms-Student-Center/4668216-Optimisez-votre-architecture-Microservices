@@ -7,4 +7,4 @@ FROM openjdk:17
 WORKDIR /app
 COPY --from=build /app/target/config-server-0.0.1-SNAPSHOT.jar /app/config-server-0.0.1-SNAPSHOT.jar
 EXPOSE 9003
-CMD ["java", "-jar", "config-server-0.0.1-SNAPSHOT.jar"ww]
+CMD ["java", "-jar", "config-server-0.0.1-SNAPSHOT.jar"]
