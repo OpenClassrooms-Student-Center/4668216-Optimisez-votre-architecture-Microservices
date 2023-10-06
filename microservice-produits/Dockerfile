@@ -7,4 +7,4 @@ FROM openjdk:17
 WORKDIR /app
 COPY --from=build /app/target/mproduits-0.0.1-SNAPSHOT.jar /app/mproduits-0.0.1-SNAPSHOT.jar
 EXPOSE 9001
-CMD ["java", "-jar", "mproduits-0.0.1-SNAPSHOT.jar", "--spring.profiles.active=prod"]
+CMD ["java", "-jar", "mproduits-0.0.1-SNAPSHOT.jar"]
