@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-produits-deployment
+  labels:
+    app: microservice-produits
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: microservice-produits
+  template:
+    metadata:
+      labels:
+        app: microservice-produits
+    spec:
+      containers:
+      - name: microservice-produits
+        image: pamoussa/mproduits:latest
+        ports:
+        - containerPort: 9001
+
+
+

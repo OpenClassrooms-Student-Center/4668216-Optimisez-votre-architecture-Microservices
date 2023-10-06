@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-paiement-deployment
+  labels:
+    app: microservice-paiement
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: microservice-paiement
+  template:
+    metadata:
+      labels:
+        app: microservice-paiement
+    spec:
+      containers:
+      - name: microservice-paiement
+        image: pamoussa/mpaiement:latest
+        ports:
+        - containerPort: 9003
+
+
+

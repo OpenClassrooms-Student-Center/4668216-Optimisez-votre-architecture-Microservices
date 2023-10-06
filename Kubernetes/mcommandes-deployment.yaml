@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-commandes-deployment
+  labels:
+    app: microservice-commandes
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: microservice-commandes
+  template:
+    metadata:
+      labels:
+        app: microservice-commandes
+    spec:
+      containers:
+      - name: microservice-commandes
+        image: pamoussa/mcommandes:latest
+        ports:
+        - containerPort: 9002
+
+
+

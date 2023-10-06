@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-paiement-service
+spec:
+  selector:
+    app: microservice-paiement
+  ports:
+    - protocol: TCP
+      port: 9003
+      targetPort: 9003
+  type: NodePort
