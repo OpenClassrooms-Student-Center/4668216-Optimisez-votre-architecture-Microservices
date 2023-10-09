@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: echo
+  annotations:
+    konghq.com/strip-path: 'true'
+spec:
+  ingressClassName: kong
+  rules:
+  - host: kong.example
+    http:
+      paths:
+      - path: /produits
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: produits-service
+            port:
+              number: 9001
+      # - path: /commandes
+      #   pathType: ImplementationSpecific
+      #   backend:
+      #     service:
+      #       name: produits-service
+      #       port:
+      #         number: 1027
+      # - path: /paiement
+      #   pathType: ImplementationSpecific
+      #   backend:
+      #     service:
+      #       name: produits-service
+      #       port:
+      #         number: 1027
